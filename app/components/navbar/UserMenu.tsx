@@ -8,9 +8,7 @@ const UserMenu = () => {
     return ( 
         <div>
             <FiUser
-                className="
-                    cursor-pointer
-                " 
+                className="cursor-pointer" 
                 size={25}
             />
         </div>
