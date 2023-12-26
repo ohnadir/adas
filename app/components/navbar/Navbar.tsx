@@ -1,4 +1,5 @@
 'use client';
+import { useState } from "react";
 import Container from "../Container"
 import Cart from "./Cart";
 import Logo from "./Logo";
@@ -6,35 +7,36 @@ import Search from "./Search";
 import UserMenu from "./UserMenu";
 
 const Navbar = () => {
-  return (
-    <div className="fixed w-full bg-slate-200 z-10 shadow-sm">
-        <div className="py- border-b-[1px]">
-            <Container>
-                <div
-                    className="
-                        flex
-                        flex-row
-                        items-center
-                        justify-between
-                        gap-3
-                        md:gap-0
-                    "
-                >
-                    <Logo/>
-                    <div className="
-                        flex 
-                        items-center 
-                        gap-4
-                    ">
-                        <UserMenu/>
-                        <Search/>
-                        <Cart/>
+    
+    return (
+        <div className="fixed w-full bg-slate-200 z-10 shadow-sm">
+            <div className="py- border-b-[1px]">
+                <Container>
+                    <div
+                        className="
+                            flex
+                            flex-row
+                            items-center
+                            justify-between
+                            gap-3
+                            md:gap-0
+                        "
+                    >
+                        <Logo/>
+                        <div className="
+                            flex 
+                            items-center 
+                            gap-4
+                        ">
+                            <UserMenu/>
+                            <Search/>
+                            <Cart/>
+                        </div>
                     </div>
-                </div>
-            </Container>
+                </Container>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Navbar
