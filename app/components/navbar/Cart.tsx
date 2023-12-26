@@ -1,9 +1,9 @@
 'use client'
-import { BiSearch } from 'react-icons/bi';
-const Search = () => {
+import { LiaShoppingBagSolid } from "react-icons/lia";
+const Cart = () => {
     return ( 
         <div>
-            <BiSearch
+            <LiaShoppingBagSolid
                 className="cursor-pointer" 
                 size={25}
             />
@@ -11,4 +11,4 @@ const Search = () => {
     );
 }
  
-export default Search;
+export default Cart;

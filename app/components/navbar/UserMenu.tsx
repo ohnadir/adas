@@ -9,7 +9,7 @@ const UserMenu = () => {
         <div>
             <FiUser
                 className="cursor-pointer" 
-                size={25}
+                size={24}
             />
         </div>
     );
