@@ -1,12 +1,15 @@
 'use client'
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import Button from "../Button";
 
 interface ModalProps {
     isOpen?: boolean;
     onClose: () => void;
+    onSubmit: () => void;
     title?: string;
     disabled?: boolean;
+    actionLabel: string;
     body?: React.ReactElement;
     footer?: React.ReactElement;
 }
@@ -14,8 +17,10 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({
     isOpen,
     onClose,
+    onSubmit, 
     disabled,
     title,
+    actionLabel,
     body,
     footer
 }) => {
@@ -23,6 +28,14 @@ const Modal: React.FC<ModalProps> = ({
     useEffect(() => {
         setShowModal(isOpen);
     }, [isOpen]);
+
+    const handleSubmit = useCallback(() => {
+        if (disabled) {
+          return;
+        }
+    
+        onSubmit();
+    }, [onSubmit, disabled]);
 
     const handleClose = useCallback(() => {
         if (disabled) {
@@ -33,7 +46,7 @@ const Modal: React.FC<ModalProps> = ({
         setTimeout(() => {
           onClose();
         }, 300)
-      }, [onClose, disabled]);
+    }, [onClose, disabled]);
 
     if (!isOpen) {
         return null;
@@ -122,12 +135,12 @@ const Modal: React.FC<ModalProps> = ({
                     </div>
 
                     {/*body*/}
-                    <div className="relative p-6 flex-auto">
+                    <div className="relative px-6 pt-6 flex-auto">
                         {body}
                     </div>
 
                     {/*footer*/}
-                    <div className="flex flex-col gap-2 px-6 pb-6">
+                    <div className="flex flex-col gap-2 p-6">
                         <div 
                             className="
                                 flex 
@@ -136,6 +149,13 @@ const Modal: React.FC<ModalProps> = ({
                                 gap-4 
                                 w-full
                             ">
+                                <Button 
+                                    disabled={disabled} 
+                                    label={actionLabel} 
+                                    outline 
+                                    small
+                                    onClick={handleSubmit}
+                                />
                         </div>
                         {footer}
                     </div>

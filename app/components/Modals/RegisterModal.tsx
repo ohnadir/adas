@@ -28,6 +28,11 @@ const RegisterModal = () => {
             password: ''
         },
     });
+
+    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+        setIsLoading(true);
+    }
+
     const bodyContent = (
         <div className="flex flex-col gap-4">
             <Input
@@ -58,18 +63,12 @@ const RegisterModal = () => {
                 errors={errors}
                 required
             />
-            <Button 
-                outline 
-                small
-                label="Continue with Github"
-                onClick={handleSubmit}
-            />
         </div>
     )
     const footerContent = (
         <>
         
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button 
                 outline 
                 label="Google"
@@ -111,8 +110,10 @@ const RegisterModal = () => {
         <Modal
             isOpen={registerModal.isOpen}
             onClose={registerModal.onClose}
+            onSubmit={handleSubmit(onSubmit)}
             disabled={isLoading}
             title="Register Here"
+            actionLabel="Continue"
             body={bodyContent}
             footer={footerContent}
         />

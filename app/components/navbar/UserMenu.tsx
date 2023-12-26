@@ -13,9 +13,9 @@ const UserMenu = () => {
     
     return ( 
         <div>
-            
-            <MenuItem 
-                label="Sign up" 
+            <FiUser
+                className="cursor-pointer"
+                size={22}
                 onClick={registerModal.onOpen}
             />
         </div>
