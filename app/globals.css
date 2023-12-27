@@ -11,3 +11,33 @@ p, h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
 }
+
+.drawer {
+  height: 100%;
+  position: fixed;
+  width: 0;
+  transition: all 0.3s linear;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+@keyframes openDrawer {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes closeDrawer {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+.drawer.open {
+  animation: openDrawer 0.3s forwards;
+}
+.drawer.close {
+  animation: closeDrawer 0.3s forwards;
+}

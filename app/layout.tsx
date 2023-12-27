@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import RegisterModal from './components/Modals/RegisterModal'
 import LoginModal from './components/Modals/LoginModal'
+import SearchDrawer from './components/Drawer/SearchDrawer'
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <RegisterModal />
         <LoginModal/>
         <Navbar/>
+        <SearchDrawer/>
         {children}
       </body>
     </html>
