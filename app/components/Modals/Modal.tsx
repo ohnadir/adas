@@ -28,7 +28,6 @@ const Modal: React.FC<ModalProps> = ({
     useEffect(() => {
         setShowModal(isOpen);
     }, [isOpen]);
-
     const handleSubmit = useCallback(() => {
         if (disabled) {
           return;
@@ -158,7 +157,7 @@ const Modal: React.FC<ModalProps> = ({
                                 />
                         </div>
                         {footer}
-                    </div>
+                    </div> 
                     </div>
                 </div>
 

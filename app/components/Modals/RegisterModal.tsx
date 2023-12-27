@@ -1,7 +1,8 @@
 'use client'
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Modal from "./Modal";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useLoginModal from "@/app/hooks/useLoginModal";
 import { 
     FieldValues, 
     SubmitHandler,
@@ -14,6 +15,7 @@ import Button from "../Button";
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
+    const loginModal = useLoginModal();
     const [isLoading, setIsLoading] = useState(false);
     const {
         register, 
@@ -32,6 +34,12 @@ const RegisterModal = () => {
     const onSubmit: SubmitHandler<FieldValues> = (data) => {
         setIsLoading(true);
     }
+
+    const onToggle = useCallback(() => {
+        registerModal.onClose();
+        loginModal.onOpen();
+    }, [registerModal, loginModal]);
+
 
     const bodyContent = (
         <div className="flex flex-col gap-4">
@@ -95,7 +103,7 @@ const RegisterModal = () => {
             >
                 <p>Already have an account?
                 <span 
-                    // onClick={onToggle} 
+                    onClick={onToggle} 
                     className="
                     text-neutral-800
                     cursor-pointer 
@@ -105,7 +113,8 @@ const RegisterModal = () => {
                 </p>
             </div>
         </>
-      )
+    )
+
     return ( 
         <Modal
             isOpen={registerModal.isOpen}

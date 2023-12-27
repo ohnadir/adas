@@ -32,8 +32,7 @@ const Input: React.FC<InputProps> = ({
             <label 
                 className={`
                 text-[16px]
-                text-[#000]
-                ${errors[id] ? 'text-rose-500' : 'text-zinc-400'}
+                ${errors[id] ? 'text-rose-500' : '#000'}
                 `}
             >
                 {label}
