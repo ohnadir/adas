@@ -1,6 +1,5 @@
 import EmptyState from "../components/EmptyState";
 
-
 const WishList = () => {
     const wishListings = [];
     if (wishListings.length === 0) {

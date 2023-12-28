@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import Logo from "../navbar/Logo";
+import Logo from "../Navbar/Logo";
 import Drawer from "./Drawer";
 import useMobileDrawer from "@/app/hooks/useMobileDrawer"
 

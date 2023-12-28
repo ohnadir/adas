@@ -18,12 +18,15 @@ const Drawer: React.FC<DrawerProps> = ({
     body,
     type
 }) => {
+    
     const handleClose = useCallback(() => {
         onClose();
     }, [onClose]);
+
     if (!isOpen) {
         return null;
     }
+
     return (
         <div
             className={`drawer
@@ -35,7 +38,6 @@ const Drawer: React.FC<DrawerProps> = ({
                 {/* Header */}
                 <div className={`
                     ${type === "mobileDrawer" ? "px-[15px] " : "p-[15px] "}
-                    
                     border 
                     w-full 
                     flex 
@@ -43,7 +45,6 @@ const Drawer: React.FC<DrawerProps> = ({
                     gap-2
                 `}
                 >
-
                     <MdKeyboardArrowLeft
                         size={25}
                         onClick={handleClose}
