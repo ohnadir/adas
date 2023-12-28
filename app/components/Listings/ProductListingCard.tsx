@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
+import HeartButton from '../HeartButton';
 
 interface ProductListingCardProps {
     data: any;
@@ -14,11 +15,11 @@ const ProductListingCard: React.FC<ProductListingCardProps> = ({
         <div className='group'>
 
             {/* image container */}
-            <div className='relative '>
+            <div className='relative border'>
                 <Image 
                     src={data.image}
                     alt='Listing'
-                    width={200}
+                    width={300}
                     height={200}
                     className='
                     '
@@ -36,6 +37,11 @@ const ProductListingCard: React.FC<ProductListingCardProps> = ({
                 '
                 >
                     ${data.price}
+                </div>
+                <div className="absolute top-2 right-2">
+                    <HeartButton
+                        productId={data.id}
+                    />
                 </div>
             </div>
 
