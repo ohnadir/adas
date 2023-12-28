@@ -33,7 +33,17 @@ const Drawer: React.FC<DrawerProps> = ({
         >
             <div>
                 {/* Header */}
-                <div className="p-[15px] border w-full flex items-center gap-2">
+                <div className={`
+                    ${type === "mobileDrawer" ? "px-[15px] " : "p-[15px] "}
+                    
+                    border 
+                    w-full 
+                    flex 
+                    items-center 
+                    gap-2
+                `}
+                >
+
                     <MdKeyboardArrowLeft
                         size={25}
                         onClick={handleClose}

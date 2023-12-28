@@ -26,8 +26,10 @@ export default function RootLayout({
         <LoginModal/>
         <SearchDrawer/>
         <MobileDrawer/>
-        {/* <Navbar/> */}
-        {children}
+        <Navbar/>
+        <div className='pt-28'>
+          {children}
+        </div>
       </body>
     </html>
   )
