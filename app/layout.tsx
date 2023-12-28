@@ -27,7 +27,7 @@ export default function RootLayout({
         <SearchDrawer/>
         <MobileDrawer/>
         <Navbar/>
-        <div className='pt-28'>
+        <div className='pt-[52px]'>
           {children}
         </div>
       </body>

@@ -1,5 +1,6 @@
 import Container from "./components/Container"
 import EmptyState from "./components/EmptyState"
+import Header from "./components/Header"
 import ProductListing from "./components/Listings/ProductListingCard"
 
 export default function Home() {
@@ -21,10 +22,12 @@ export default function Home() {
     </Container>
   }
   return (
-    <Container>
-      <div>
+    <div>
+      <Header/>
+      <Container>
         <div 
           className="
+            mt-10
             grid 
             grid-cols-1 
             sm:grid-cols-2 
@@ -44,7 +47,7 @@ export default function Home() {
             ))
           }
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   )
 }
