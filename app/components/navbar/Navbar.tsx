@@ -48,6 +48,9 @@ const Navbar = () => {
                         ">
                             <UserMenu/>
                             <Search/>
+                            <div className="hidden md:block">
+                                <WishList/>
+                            </div>
                             <Cart/>
                         </div>
                     </div>
