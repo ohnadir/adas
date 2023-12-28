@@ -8,13 +8,15 @@ interface DrawerProps {
     onClose: () => void;
     header: React.ReactElement;
     body?: React.ReactElement;
+    type?: string;
 }
 
 const Drawer: React.FC<DrawerProps> = ({
     isOpen,
     onClose,
     header,
-    body
+    body,
+    type
 }) => {
     const handleClose = useCallback(() => {
         onClose();
@@ -24,7 +26,10 @@ const Drawer: React.FC<DrawerProps> = ({
     }
     return (
         <div
-            className={` drawer ${isOpen ? "open" : "close"}`}
+            className={`drawer
+                ${type === "mobileDrawer" ? "left-0" : "right-0"}
+                ${isOpen ? "open" : "close"}
+            `}
         >
             <div>
                 {/* Header */}

@@ -5,12 +5,14 @@ import Cart from "./Cart";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import MobileMenu from "./MobileMenu";
+import WishList from "./WishList";
 
 const Navbar = () => {
     
     return (
         <div className="fixed w-full bg-slate-200 z-10 shadow-sm">
-            <div className="py- border-b-[1px]">
+            <div className=" border-b-[1px]">
                 <Container>
                     <div
                         className="
@@ -21,8 +23,24 @@ const Navbar = () => {
                             gap-3
                             md:gap-0
                         "
-                    >
-                        <Logo/>
+                    >   
+                        {/* desktop Logo */}
+                        <div className="hidden md:block ">
+                            <Logo/>
+                        </div>
+
+                        {/* mobile menu item */}
+                        <div className="flex md:hidden items-center gap-4">
+                            <MobileMenu/>
+                            <WishList/>
+                        </div>
+
+                        {/* mobile version hamburger menu */}
+                        <div className="block md:hidden">
+                            <Logo/>
+                        </div>
+
+                        
                         <div className="
                             flex 
                             items-center 
