@@ -25,9 +25,16 @@ const Modal: React.FC<ModalProps> = ({
     footer
 }) => {
     const [showModal, setShowModal] = useState(isOpen);
+    
     useEffect(() => {
         setShowModal(isOpen);
+        if (isOpen === true) {
+            document.body.style.overflow = 'hidden';
+        }else{
+            document.body.style.overflow = 'auto';
+        }
     }, [isOpen]);
+
     const handleSubmit = useCallback(() => {
         if (disabled) {
           return;
@@ -50,20 +57,18 @@ const Modal: React.FC<ModalProps> = ({
     if (!isOpen) {
         return null;
     }
+    
     return ( 
         <>
             <div
+                style={{overflow: "hidden"}}
                 className="
                     justify-center 
                     items-center 
-                    flex 
-                    overflow-x-hidden 
-                    overflow-y-auto 
+                    flex
                     fixed 
                     inset-0 
-                    z-50 
-                    outline-none 
-                    focus:outline-none
+                    z-50
                     bg-neutral-800/70
                 "
             >

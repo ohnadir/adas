@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
 interface DrawerProps {
@@ -19,6 +19,14 @@ const Drawer: React.FC<DrawerProps> = ({
     type
 }) => {
     
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        }else{
+            document.body.style.overflow = 'auto';
+        }
+    }, [isOpen]);
+
     const handleClose = useCallback(() => {
         onClose();
     }, [onClose]);
@@ -26,10 +34,12 @@ const Drawer: React.FC<DrawerProps> = ({
     if (!isOpen) {
         return null;
     }
+    
 
     return (
         <div
             className={`drawer
+                overflow-hidden
                 ${type === "mobileDrawer" ? "left-0" : "right-0"}
                 ${isOpen ? "open" : "close"}
             `}
