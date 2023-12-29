@@ -11,7 +11,7 @@ import WishList from "./WishList";
 const Navbar = () => {
     
     return (
-        <div className="fixed w-full bg-slate-200 z-30 shadow-sm">
+        <div className="fixed w-full bg-white z-30 shadow-sm">
             <div className=" border-b-[1px]">
                 <Container>
                     <div

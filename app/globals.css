@@ -41,3 +41,24 @@ p, h1, h2, h3, h4, h5, h6{
 .drawer.close {
   animation: closeDrawer 0.3s forwards;
 }
+
+.active-animation{
+  animation:activeAnimation 3s linear infinite;
+}
+
+@keyframes activeAnimation {
+  
+  0%{
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, .7), 0 0 0 0 rgba(34, 197, 94, 0.702);
+  }
+  40%{
+    box-shadow: 0 0 0 5px rgba(34, 197, 94, 0), 0 0 0 0 rgba(34, 197, 94, .7);
+  }
+  80%{
+    box-shadow: 0 0 0 5px rgba(34, 197, 94, 0), 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0), 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+  
+}

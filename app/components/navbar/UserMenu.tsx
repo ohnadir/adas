@@ -12,12 +12,30 @@ const UserMenu = () => {
     const registerModal = useRegisterModal();
     
     return ( 
-        <div>
+        <div className="relative">
             <FiUser
-                className="cursor-pointer"
+                className="cursor-pointer "
                 size={22}
                 onClick={registerModal.onOpen}
             />
+            <div className="
+                absolute
+                -top-2
+                -right-[6px] 
+                flex 
+                items-center 
+                justify-center
+                "
+            >
+                <div className="
+                    active-animation 
+                    h-3 
+                    w-3 
+                    bg-[#22c55eb3] 
+                    rounded-full
+                    "
+                ></div>
+            </div>
         </div>
     );
 }
