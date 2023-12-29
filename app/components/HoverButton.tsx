@@ -13,9 +13,10 @@ const HoverButton: React.FC<HoverButtonProps> = ({
     url
 }) => {
     return (
-        <Link href={url}>
+        <Link href={url} >
             <div className={`
                 ${label === "SHOP WOMEN" ? "w-[175px]" : "w-[150px]"} 
+                ${label === "SIGN UP FOR FREE" ? "w-[200px]" : "w-[150px]"} 
                 relative
                 group 
             `}>
@@ -27,6 +28,7 @@ const HoverButton: React.FC<HoverButtonProps> = ({
                     pl-3
                     items-center
                     ${label === "SHOP WOMEN" ? "w-[175px]" : "w-[150px]"} 
+                    ${label === "SIGN UP FOR FREE" ? "w-[200px]" : "w-[150px]"} 
                     relative
                     z-20
                     font-bold
