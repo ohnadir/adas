@@ -1,5 +1,6 @@
 import Container from "./components/Container"
 import EmptyState from "./components/EmptyState"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import ProductListing from "./components/Listings/ProductListingCard"
 import Promotion from "./components/Promotion"
@@ -50,6 +51,7 @@ export default function Home() {
         </div>
       </Container>
       <Promotion/>
+      <Footer/>
     </div>
   )
 }
