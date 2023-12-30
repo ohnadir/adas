@@ -43,7 +43,7 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .active-animation{
-  animation:activeAnimation 3s linear infinite;
+  animation:activeAnimation 2s linear infinite;
 }
 
 @keyframes activeAnimation {
