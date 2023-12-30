@@ -9,7 +9,7 @@ import MobileMenu from "./MobileMenu";
 import WishList from "./WishList";
 
 const Navbar = () => {
-    
+    const wishlistCount= 0;
     return (
         <div className="fixed w-full bg-white z-30 shadow-sm">
             <div className=" border-b-[1px]">
@@ -32,7 +32,7 @@ const Navbar = () => {
                         {/* mobile menu item */}
                         <div className="flex md:hidden items-center gap-4">
                             <MobileMenu/>
-                            <WishList/>
+                            <WishList count={wishlistCount} />
                         </div>
 
                         {/* mobile version hamburger menu */}
@@ -48,8 +48,12 @@ const Navbar = () => {
                         ">
                             <UserMenu/>
                             <Search/>
-                            <div className="hidden md:block">
-                                <WishList/>
+                            <div className={`
+                                hidden
+                                md:block
+                                
+                            `}>
+                                <WishList count={wishlistCount} />
                             </div>
                             <Cart/>
                         </div>
