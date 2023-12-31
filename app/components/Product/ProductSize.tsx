@@ -18,7 +18,7 @@ const ProductSize = () => {
                 grid
                 grid-cols-3
                 gap-4
-                my-4
+                my-5
             ">
                 {
                     sizeArray?.map((size, index)=>

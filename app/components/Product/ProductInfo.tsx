@@ -11,9 +11,9 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
 
 }) => {
     return (
-        <div className="">
+        <div className="mb-5">
             <p className="mb-3">{description}</p>
-            <ul className="list-disc">
+            <ul className="list-disc relative ml-4">
                 <li>Color Shown: {color}</li>
             </ul>
         </div>

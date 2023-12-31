@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "@/app/components/Button";
 
 import ProductHead from "@/app/components/Product/ProductHead";
+import ProductInfo from "@/app/components/Product/ProductInfo";
 
 
 const Product = () => {
@@ -36,7 +37,7 @@ const Product = () => {
 
                     <div>
 
-                        {/* information */} 
+                        {/*product head information */} 
                         <ProductHead
                             name="Nike Dunk Low"
                             category="Men's shoes"
@@ -45,6 +46,13 @@ const Product = () => {
 
                         {/* product size */}
                         <ProductSize/>
+
+                        {/* product description */}
+                        <ProductInfo
+                            description="The '80s basketball icon returns with classic details and throwback hoops flair. Channelling vintage style back onto the streets, its padded, low-cut collar lets you take your game anywhere—in comfort."
+                            color="Light Bone/Phantom/Neutral Olive/Medium Olive"
+                        />
+                        
                         <Button 
                             label="Add to Bag"
                             outline
