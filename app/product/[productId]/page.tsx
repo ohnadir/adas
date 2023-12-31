@@ -3,6 +3,8 @@ import ProductSize from "../../components/Product/ProductSize"
 import { useState } from "react";
 import Button from "@/app/components/Button";
 
+import ProductHead from "@/app/components/Product/ProductHead";
+
 
 const Product = () => {
     
@@ -19,6 +21,7 @@ const Product = () => {
                 text-center 
                 text-[14px]
                 gap-1
+                mb-5
                 "
             >
                 <span className="max-w-[70%]">Fast delivery. Free shipping for orders over $80. Payment by Cash on Delivery, Tabby & More.</span>
@@ -31,29 +34,14 @@ const Product = () => {
                     {/* image container */}
                     <div></div>
 
-                    {/* information container */}
-                    <div className="">
+                    <div>
 
-                        {/* information */}
-                        <div className="mb-5">
-                            <h3 className="
-                                text-[#fa5400] 
-                                text-[15px] 
-                                font-bold
-                                "
-                            >
-                                Just in
-                            </h3>
-
-                            {/* Product Name */}
-                            <h1 className="text-[25px] font-bold">Nike Dunk Low</h1>
-
-                            {/* Product Category */}
-                            <h3 className="font-semibold mb-1">Men&apos;s Shes</h3>
-
-                            {/* Product Price */}
-                            <h2>$110.00</h2>
-                        </div>
+                        {/* information */} 
+                        <ProductHead
+                            name="Nike Dunk Low"
+                            category="Men's shoes"
+                            price={110}
+                        />
 
                         {/* product size */}
                         <ProductSize/>
@@ -64,11 +52,15 @@ const Product = () => {
                         />
 
                         {/* Policy */}
-                        <ul className="list-disc font-semibold">
-                            <li>You can return your order for any reason, free of charge, within 30 days.</li>
-                            <li>Free delivery for orders SAR 299 and above.</li>
-                            <li>Order delivery is usually within 2-5 working days</li>
-                        </ul>
+                        <div className="mt-5 relative">
+                            <ul className="list-disc font-semibold pl-4">
+                                <li>You can return your order for any reason, free of charge, within 30 days.</li>
+                                <li>Free delivery for orders SAR 299 and above.</li>
+                                <li>Order delivery is usually within 2-5 working days</li>
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
             </Container>
