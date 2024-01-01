@@ -9,6 +9,7 @@ import MultipleColorProduct from "@/app/components/Utils/product.json";
 import ProductColor from "@/app/components/Product/ProductColor";
 import RecentlyViewed from "@/app/components/RecentlyViewed";
 import CompleteProductListingCard from "@/app/components/Listings/CompleteProductListingCard"
+import RecommendedProductListingCard from "@/app/components/Listings/RecommendedProductListingCard"
 
 
 const Product = () => {
@@ -66,8 +67,8 @@ const Product = () => {
                         />
 
                         {/* Policy */}
-                        <div className="mt-5 relative">
-                            <ul className="list-disc font-semibold pl-4">
+                        <div className="mt-5">
+                            <ul className="list-disc font-semibold pl-4 ">
                                 <li>You can return your order for any reason, free of charge, within 30 days.</li>
                                 <li>Free delivery for orders SAR 299 and above.</li>
                                 <li>Order delivery is usually within 2-5 working days</li>
@@ -80,6 +81,9 @@ const Product = () => {
                 
                 {/* complete product */}
                 <CompleteProductListingCard/>
+
+                {/* recommended product for dynamic product category */}
+                <RecommendedProductListingCard/>
 
                 {/* Recently view product section */}
                 <RecentlyViewed/>

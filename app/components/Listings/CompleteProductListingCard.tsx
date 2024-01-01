@@ -68,7 +68,7 @@ const CompleteProductListingCard = () => {
     };
     return (
         <div className='my-12'>
-            <h1 className='text-[30px] font-bold tracking-[1.5s] mb-5'>COMPLETE THE LOOK</h1>
+            <h1 className='text-[30px] font-bold tracking-[1.5s] mb-5'>OTHERS ALSO BOUGHT</h1>
             <Slider {...settings}>
                 {
                     productListing?.map((listing: any)=>(
