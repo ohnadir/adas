@@ -12,7 +12,9 @@ interface ColorType {
     src: string[]
   }
 
-const ProductColor = () => {
+const ProductColor: React.FC<ProductColorProps> = ({
+    color,
+}) => {
     const [selectColor, setSelectColor] = useState<ColorType | undefined>();
     const [colorName, setColorName] = useState<string>(selectColor?.color || MultipleColorProduct[0].color);
     return (
