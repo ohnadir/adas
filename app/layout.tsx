@@ -6,6 +6,8 @@ import RegisterModal from './components/Modals/RegisterModal'
 import LoginModal from './components/Modals/LoginModal'
 import SearchDrawer from './components/Drawer/SearchDrawer'
 import MobileDrawer from './components/Drawer/MobileDrawer'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const font = Nunito({ subsets: ['latin'] })
 

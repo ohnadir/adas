@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import HeartButton from '../HeartButton';
 
+
 interface ProductListingCardProps {
     data: any;
   };

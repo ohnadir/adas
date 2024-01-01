@@ -7,6 +7,7 @@ import ProductHead from "@/app/components/Product/ProductHead";
 import ProductInfo from "@/app/components/Product/ProductInfo";
 import MultipleColorProduct from "@/app/components/Utils/product.json";
 import ProductColor from "@/app/components/Product/ProductColor";
+import RecentlyViewed from "@/app/components/RecentlyViewed";
 
 
 const Product = () => {
@@ -46,9 +47,8 @@ const Product = () => {
                         />
 
                         {/* product multiple color section */}
-                        <div>
-                            <ProductColor/>
-                        </div>
+                        <ProductColor/>
+                        
                         {/* product size */}
                         <ProductSize/>
 
@@ -76,6 +76,9 @@ const Product = () => {
 
                     </div>
                 </div>
+
+                {/* Recently view product section */}
+                <RecentlyViewed/>
             </Container>
         </>
 
