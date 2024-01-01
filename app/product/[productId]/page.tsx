@@ -5,6 +5,8 @@ import Button from "@/app/components/Button";
 
 import ProductHead from "@/app/components/Product/ProductHead";
 import ProductInfo from "@/app/components/Product/ProductInfo";
+import MultipleColorProduct from "@/app/components/Utils/product.json";
+import ProductColor from "@/app/components/Product/ProductColor";
 
 
 const Product = () => {
@@ -36,7 +38,6 @@ const Product = () => {
                     <div></div>
 
                     <div>
-
                         {/*product head information */} 
                         <ProductHead
                             name="Nike Dunk Low"
@@ -44,6 +45,10 @@ const Product = () => {
                             price={110}
                         />
 
+                        {/* product multiple color section */}
+                        <div>
+                            <ProductColor/>
+                        </div>
                         {/* product size */}
                         <ProductSize/>
 

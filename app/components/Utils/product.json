@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 0,
+        "color" : "Cloud White / Core Black / gum",
+        "src": [
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Samba_OG_Shoes_White_B75806_01_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec595635a2994adea094a8bf0117ef1a_9366/Samba_OG_Shoes_White_B75806_02_standard_hover.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/97cd0902ae2e402b895aa8bf0117f98f_9366/Samba_OG_Shoes_White_B75806_03_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b067d21288bc43ec8298a8bf01180400_9366/Samba_OG_Shoes_White_B75806_04_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3a8d5f9cb7444bd195f1a8bf01180e68_9366/Samba_OG_Shoes_White_B75806_05_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/671c62b81c3448e980aca8bf01181a93_9366/Samba_OG_Shoes_White_B75806_41_detail.jpg"
+        ]
+    },
+    {
+        "id" : 1,
+        "color" : "Core Black / Cloud White / Gum",
+        "src": [
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/309a0c8f53dd45d3a3bea8bf0118aa6b_9366/Samba_OG_Shoes_Black_B75807_02_standard_hover.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a766df52607e42858ddba8bf0118c6cb_9366/Samba_OG_Shoes_Black_B75807_04_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a3ffa88f92a74c6d9979a8bf0118b9d0_9366/Samba_OG_Shoes_Black_B75807_03_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/541ded71f98a4a8a8496a8bf0118ea18_9366/Samba_OG_Shoes_Black_B75807_42_detail.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/99f7a73049474248a9c2a8bf0118ddab_9366/Samba_OG_Shoes_Black_B75807_41_detail.jpg"
+        ]
+    },
+    {
+        "id" : 2,
+        "color" : "Silver Green S23 / Chalk White / Gum",
+        "src": [
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/612e04479ff1445b99b051d7e05b581f_9366/Samba_OG_Shoes_Green_IE7011_01_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2a4da6f32619467f83b80f07a4bf3d45_9366/Samba_OG_Shoes_Green_IE7011_02_standard_hover.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/432885f19cd84f4abbf33cf8fe4f1f14_9366/Samba_OG_Shoes_Green_IE7011_03_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/acb8c18e8755402d888c1f922c0fe698_9366/Samba_OG_Shoes_Green_IE7011_05_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9c972f456fa84dc1897d3bb3c8522076_9366/Samba_OG_Shoes_Green_IE7011_42_detail.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a421c7e5d11425a9cb2b6736877967f_9366/Samba_OG_Shoes_Green_IE7011_06_standard.jpg"
+        ]
+    },
+    {
+        "id" : 3,
+        "color" : "Cloud White / Wonder Clay / Crystal White",
+        "src": [
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/31715de33f6643eeb32b6a82008bd648_9366/Samba_OG_Shoes_White_IG5932_01_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b91a2221fb5446ab954264cec40cb814_9366/Samba_OG_Shoes_White_IG5932_06_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e405a537a32343a6802423cc1dedf7d5_9366/Samba_OG_Shoes_White_IG5932_41_detail.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/81b48c032d624f039f0ef930795eb569_9366/Samba_OG_Shoes_White_IG5932_42_detail.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/10a89b4a4f3245e88672fd1e4ebf114d_9366/Samba_OG_Shoes_White_IG5932_09_standard.jpg",
+            "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4e1b2e26ba584bcb9c54d23205b43a5c_9366/Samba_OG_Shoes_White_IG5932_05_standard.jpg"
+        ]
+    }
+]
