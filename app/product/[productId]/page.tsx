@@ -8,6 +8,7 @@ import ProductInfo from "@/app/components/Product/ProductInfo";
 import MultipleColorProduct from "@/app/components/Utils/product.json";
 import ProductColor from "@/app/components/Product/ProductColor";
 import RecentlyViewed from "@/app/components/RecentlyViewed";
+import CompleteProductListingCard from "@/app/components/Listings/CompleteProductListingCard"
 
 
 const Product = () => {
@@ -76,6 +77,9 @@ const Product = () => {
 
                     </div>
                 </div>
+                
+                {/* complete product */}
+                <CompleteProductListingCard/>
 
                 {/* Recently view product section */}
                 <RecentlyViewed/>

@@ -1,17 +1,17 @@
-'use client'
+'use client';
 
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
-import ProductListingCard from './Listings/ProductListingCard';
+import ProductListingCard from './ProductListingCard';
 import Slider from 'react-slick';
-import productListing from "@/app/components/Utils/ProductListing.json";
+import productListing from "../Utils/ProductListing.json";
+
+
 
 
 interface ArrowProps {
     currentSlide?: number;
     slideCount?: number;
-  }
-
-
+}
 
 const ArrowLeft: React.FC<ArrowProps> = ({ currentSlide, slideCount, ...props }) => (
     <button
@@ -54,7 +54,8 @@ const ArrowRight: React.FC<ArrowProps> = ({ currentSlide, slideCount, ...props }
     </button>
 );
 
-const RecentlyViewed = () => {
+
+const CompleteProductListingCard = () => {
     const settings = {
         dots: false,
         arrows:true,
@@ -66,8 +67,8 @@ const RecentlyViewed = () => {
         slidesToScroll: 3
     };
     return (
-        <div className='my-8'>
-            <h1 className='text-[30px] font-bold tracking-[1.5s] mb-5'>RECENTLY VIEWED ITEMS</h1>
+        <div className='my-12'>
+            <h1 className='text-[30px] font-bold tracking-[1.5s] mb-5'>COMPLETE THE LOOK</h1>
             <Slider {...settings}>
                 {
                     productListing?.map((listing: any)=>(
@@ -82,4 +83,4 @@ const RecentlyViewed = () => {
     )
 }
 
-export default RecentlyViewed
+export default CompleteProductListingCard
