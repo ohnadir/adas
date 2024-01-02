@@ -2,6 +2,7 @@ import Banner from "../components/Banner";
 import Button from "../components/Button";
 import CartSummary from "../components/Cart/CartSummary";
 import Container from "../components/Container";
+import RecommendedProductListingCard from "../components/Listings/RecommendedProductListingCard";
 
 
 const Cart = () => {
@@ -33,6 +34,11 @@ const Cart = () => {
                             outline
                         />
                     </div>
+
+                    {/* recommended product */}
+                    <RecommendedProductListingCard
+                        
+                    />
                 </div>
             </Container>
             
