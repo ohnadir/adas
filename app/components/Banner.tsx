@@ -1,17 +1,20 @@
 'use client'
 
 interface BannerProps{
-    details?: string,
+    details: string,
+    title?: string,
     src?:  React.ReactElement;
 }
 
 const Banner: React.FC<BannerProps> = ({
     details,
-    src
+    src,
+    title
 }) => {
     return (
-        <div className="
-            bg-[#f5f5f5] 
+        <div className={`
+            ${title === "checkout" ? "bg-black" : "bg-[#f5f5f5] "}
+            ${title === "checkout" ? "text-white" : "text-black"}
             flex flex-col md:flex-row 
             items-center justify-center 
             h-[80px] 
@@ -20,7 +23,7 @@ const Banner: React.FC<BannerProps> = ({
             text-center 
             text-[15px]
             gap-1
-            "
+            `}
         >   
             {src}
             <span className="max-w-[70%]">{details}</span>

@@ -21,6 +21,7 @@ const Cart = () => {
                 }
             />
 
+            {/* mobile version bag with total item length and total price section */}
             <div className="
                 md:hidden
                 h-[100px]
