@@ -2,6 +2,7 @@ import Banner from "../components/Banner";
 import Button from "../components/Button";
 import CartSummary from "../components/Cart/CartSummary";
 import Container from "../components/Container";
+import CartProductListingCard from "../components/Listings/CartProductListingCard";
 import RecommendedProductListingCard from "../components/Listings/RecommendedProductListingCard";
 
 
@@ -23,7 +24,9 @@ const Cart = () => {
             <Container>
                 <div>
                     {/* cart added product listing section */}
-                    <div></div>
+                    <div>
+                        <CartProductListingCard/>
+                    </div>
 
                     {/* cart summary */}
                     <div>
@@ -37,7 +40,7 @@ const Cart = () => {
 
                     {/* recommended product */}
                     <RecommendedProductListingCard
-                        
+
                     />
                 </div>
             </Container>

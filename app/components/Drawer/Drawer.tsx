@@ -19,13 +19,13 @@ const Drawer: React.FC<DrawerProps> = ({
     type
 }) => {
     
-    useEffect(() => {
+    /* useEffect(() => {
         if (isOpen) {
-            document.body.style.overflow = 'hidden';
-        }else{
-            document.body.style.overflow = 'auto';
-        }
-    }, [isOpen]);
+          document.body.style.overflow = 'hidden';
+      }else{
+          document.body.style.overflow = 'auto';
+    }
+    }, [isOpen]); */
 
     const handleClose = useCallback(() => {
         onClose();
@@ -37,43 +37,34 @@ const Drawer: React.FC<DrawerProps> = ({
     
 
     return (
+      <div
+        id="sidebar"
+        className={`
+          fixed 
+          transition-transform
+          z-50  
+          transition-opacity 
+          duration-500 ${
+          isOpen
+            ? "opacity-100"
+            : "opacity-0 pointer-events-none min-h-0 min-w-0"
+        }`}
+      >
         <div
-            className={`drawer
-                overflow-hidden
-                ${type === "mobileDrawer" ? "left-0" : "right-0"}
-                ${isOpen ? "open" : "close"}
-            `}
+          className={`fixed inset-y-0 
+          left-0 w-1/5 
+          bg-[#212529]
+            
+           duration-[1000ms] ${
+            isOpen ? "transform transition-transform duration-[1000ms]  translate-x-0" : "duration-[1000ms] transition-transform transform -translate-x-full"
+          }`}
         >
-            <div>
-                {/* Header */}
-                <div className={`
-                    ${type === "mobileDrawer" ? "px-[15px] " : "p-[15px] "}
-                    border 
-                    w-full 
-                    flex 
-                    items-center 
-                    gap-2
-                `}
-                >
-                    <MdKeyboardArrowLeft
-                        size={25}
-                        onClick={handleClose}
-                        className="cursor-pointer"
-                    />
-                    { header }
-                </div>
-
-                {/* body */}
-                <div className="p-[15px]">
-                    {/* {body} */}
-                </div>
-
-                {/* footer */}
-                <div className="p-[15px]">
-                    {/* {footer} */}
-                </div>
-            </div>
+          x
+          <div className="p-8 my-12 lg:p-8">
+            
+          </div>
         </div>
+      </div>
     )
 }
 
