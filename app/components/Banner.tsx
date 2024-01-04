@@ -20,7 +20,6 @@ const Banner: React.FC<BannerProps> = ({
             text-center 
             text-[15px]
             gap-1
-            mb-5
             "
         >   
             {src}

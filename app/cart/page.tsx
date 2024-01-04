@@ -21,13 +21,51 @@ const Cart = () => {
                 }
             />
 
+            <div className="
+                md:hidden
+                h-[100px]
+                relative
+                flex
+                flex-col 
+                border-[#e5e7eb]
+                border-b-[1px]
+                items-center 
+                justify-center
+                mb-6
+                "
+            >
+                <p className="font-bold text-xl">Bag</p>
+                <div className="flex items-center gap-2">
+                    <p className="text-[#757575] text-[15px] font-bold " > 3 Items </p>
+                    <div className="
+                        bg-[#757575] 
+                        w-[2px] 
+                        h-[10px]
+                        "
+                    ></div>
+                    <p className="text-black font-bold text-[15px]">
+                        SAR 2,100.00
+                    </p>
+                </div>
+                <hr />
+            </div>
+
+
             <Container>
-                <div className="flex justify-between gap-10">
+                <div className="
+                    flex
+                    flex-col
+                    md:flex-row 
+                    justify-between 
+                    gap-10
+                    md:mt-7
+                    "
+                >
                     {/* cart added product listing section */}
                     <CartProductListingCard/>
 
                     {/* cart summary */}
-                    <div className="w-full sm:w-[30%] md:w-[30%] lg-[40%]">
+                    <div className="w-full md:w-[30%] lg-[40%]">
                         <CartSummary/>
                         <Button
                             label="Checkout"

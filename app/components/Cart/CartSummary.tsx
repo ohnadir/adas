@@ -7,7 +7,7 @@ interface CartSummaryProps {
 
 const CartSummary = () => {
     return (
-        <div className="mb-8">
+        <div className="mb-8 ">
             <h1 className="text-xl font-semibold mb-3">Summary</h1>
             <div className="flex justify-between">
                 <p>Subtotal (9 Items)</p>
