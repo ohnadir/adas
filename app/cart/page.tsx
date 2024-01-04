@@ -22,14 +22,12 @@ const Cart = () => {
             />
 
             <Container>
-                <div>
+                <div className="flex justify-between gap-10">
                     {/* cart added product listing section */}
-                    <div>
-                        <CartProductListingCard/>
-                    </div>
+                    <CartProductListingCard/>
 
                     {/* cart summary */}
-                    <div>
+                    <div className="w-full sm:w-[30%] md:w-[30%] lg-[40%]">
                         <CartSummary/>
                         <Button
                             label="Checkout"
@@ -37,12 +35,10 @@ const Cart = () => {
                             outline
                         />
                     </div>
-
-                    {/* recommended product */}
-                    <RecommendedProductListingCard
-
-                    />
                 </div>
+
+                {/* recommended product */}
+                <RecommendedProductListingCard/>
             </Container>
             
         </>

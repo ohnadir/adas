@@ -6,6 +6,7 @@ import { VscTrash } from "react-icons/vsc";
 const CartProductListingCard = () => {
     return (
         <div className="
+            w-full sm:w-[70%] md:w-[70%] lg-[60%]
             flex
             justify-between
             "
@@ -16,8 +17,9 @@ const CartProductListingCard = () => {
                     alt="Shoes image"
                     width={200}
                     height={200}
+                    className="h-fit"
                 />
-                <div>
+                <div className="h-fit">
                     <h1 className="font-semibold">Nike Air Force 1 &apos;07</h1>
                     <p className="text-[#757575] font-semibold">Men&apos;s Shoes</p>
                     <p className="text-[#757575] font-semibold">White/white</p>
