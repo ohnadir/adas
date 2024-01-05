@@ -8,6 +8,7 @@ import SearchDrawer from './components/Drawer/SearchDrawer'
 import MobileDrawer from './components/Drawer/MobileDrawer'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import 'react-phone-input-2/lib/style.css'
 
 const font = Nunito({ subsets: ['latin'] })
 

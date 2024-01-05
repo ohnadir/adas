@@ -4,6 +4,8 @@ import Container from "../components/Container"
 import ProductList from "@/app/components/Utils/ProductListing.json"
 import CheckoutProductListingCard from "../components/Listings/CheckoutProductListingCard"
 import AnimatedInput from "../components/Inputs/AnimatedInput"
+import PhoneInput from '@/app/components/Inputs/PhoneInput'
+import CountryCityArea from '@/app/components/Inputs/CountryCityArea'
 
 
 const Checkout = () => {
@@ -35,6 +37,15 @@ const Checkout = () => {
                         <AnimatedInput
                             label="Last Name"
                         />
+
+                        <PhoneInput/>
+                        <p className="text-[#757575] mt-1">A carrier might contact you to confirm delivery.</p>
+
+                        <div className="flex items-center gap-2 my-3">
+                            <input className="h-[20px] w-[20px]" type="checkbox" />
+                            <label className="font-semibold">This is also my Whatsapp number</label>
+                        </div>
+                        <CountryCityArea/>
                     </div>
                     
 
