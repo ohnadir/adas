@@ -12,8 +12,8 @@ interface InputProps {
     placeholder?:string;
     disabled?: boolean;
     required?: boolean;
-    register: UseFormRegister<FieldValues>,
-    errors: FieldErrors
+    register?: UseFormRegister<FieldValues>,
+    errors?: FieldErrors
 }
 
 const Input: React.FC<InputProps> = ({
@@ -32,7 +32,6 @@ const Input: React.FC<InputProps> = ({
             <label 
                 className={`
                 text-[16px]
-                ${errors[id] ? 'text-rose-500' : '#000'}
                 `}
             >
                 {label}
@@ -42,14 +41,14 @@ const Input: React.FC<InputProps> = ({
             <input
                 id={id}
                 disabled={disabled}
-                {...register(id, { required })}
                 placeholder={placeholder}
                 type={type}
                 className={`
                     peer
                     w-full
                     px-4
-                    h-[42px]
+                    
+                    h-[35px]
                     font-light 
                     bg-[#eee]
                     rounded-md
@@ -58,8 +57,6 @@ const Input: React.FC<InputProps> = ({
                     transition
                     disabled:opacity-70
                     disabled:cursor-not-allowed
-                    ${errors[id] ? 'border-rose-500' : 'border-neutral-300'}
-                    ${errors[id] ? 'focus:border-rose-500' : 'focus:border-black'}
                 `}
             />
         </div>
