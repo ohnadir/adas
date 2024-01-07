@@ -13,9 +13,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         <Link href='/account'>
                             <li>Personal Information</li>
                         </Link>
-                        <Link href='/account/mypurchases'>
-                            <li>My Purchase</li>
-                        </Link>
                         <Link href='/account/myorders'>
                             <li>My Orders</li>
                         </Link>
