@@ -48,7 +48,7 @@ const Input: React.FC<InputProps> = ({
                     w-full
                     px-4
                     
-                    h-[35px]
+                    h-[38px]
                     font-light 
                     bg-[#eee]
                     rounded-md

@@ -1,9 +1,15 @@
+import { Metadata } from "next"
+import OrderClient from "./OrderClient"
 
 
 const MyOrders = () => {
     return (
-        <div>MyOrders</div>
+        <OrderClient/>
     )
 }
 
 export default MyOrders
+
+export const metadata: Metadata = {
+    title: 'My Orders'
+}

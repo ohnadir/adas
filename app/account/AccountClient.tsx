@@ -21,7 +21,7 @@ const AccountClient = () => {
                 label="Name"
                 placeholder="Enter your Name"
             />
-            <p className="py-2">Change your account details below, or <span className="underline ">click here</span> to change your password</p>
+            <p className="py-2">Change your account details below, or <span className="underline cursor-pointer">click here</span> to change your password</p>
             <Button 
                 label="Update" 
                 outline
